@@ -29,9 +29,9 @@
 
 ### Overview
 
-**Project Title** 
+**Searchies** 
 
-**Project Description** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+**Project Description** "Searchies" is a movie search site which will return movie, actor/actress, film movie details._
 
 <br>
 
@@ -69,17 +69,18 @@
 
 > The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Searchies** The user will be able to search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and render a new component which will give a more detailed description of the search(ed) item(s)  ._
 
 <br>
 
 #### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _React class & function components,_
+- _Return API data from Search field input value._
+- _Update DOM with search results._
+- _Update DOM to show more detailed information about selected item._
+- Get better at React State/PreState and Props_
+- _Organize components and code._
 
 <br>
 
@@ -89,9 +90,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Spring   | _Lorem ipsum dolor sit amet, consectetur._ |
+|   React Router   | _Will control main site navigation._ |
+| AXIOS | _Will access API data ._ |
+|   React Links   | _Will provide site links between site content._ |
 
 <br>
 
@@ -101,10 +102,79 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| WeatherAPI |      yes      | _example.com_ | _example.com/mickeymouse?s=movies&t=10_ |
+| The Movie DB |      yes     |_https://www.themoviedb.org/_ | _see below_ |
+| The Movie DB |      yes     |_https://obdb.com/ _ | _see below_ |
 
 ```
 JSON data sample from your API goes here.
+{
+  "adult": false,
+  "backdrop_path": "/kN0s7VCXZinNXP9qV0yDHOVrZn3.jpg",
+  "belongs_to_collection": {
+    "id": 10,
+    "name": "Star Wars Collection",
+    "poster_path": "/r8Ph5MYXL04Qzu4QBbq2KjqwtkQ.jpg",
+    "backdrop_path": "/d8duYyyC9J5T825Hg7grmaabfxQ.jpg"
+  },
+  "budget": 11000000,
+  "genres": [
+    {
+      "id": 12,
+      "name": "Adventure"
+    },
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 878,
+      "name": "Science Fiction"
+    }
+  ],
+  "homepage": "http://www.starwars.com/films/star-wars-episode-iv-a-new-hope",
+  "id": 11,
+  "imdb_id": "tt0076759",
+  "original_language": "en",
+  "original_title": "Star Wars",
+  "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+  "popularity": 58.737,
+  "poster_path": "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+  "production_companies": [
+    {
+      "id": 1,
+      "logo_path": "/o86DbpburjxrqAzEDhXZcyE8pDb.png",
+      "name": "Lucasfilm Ltd.",
+      "origin_country": "US"
+    },
+    {
+      "id": 25,
+      "logo_path": "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+      "name": "20th Century Fox",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "1977-05-25",
+  "revenue": 775398007,
+  "runtime": 121,
+  "spoken_languages": [
+    {
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "A long time ago in a galaxy far, far away...",
+  "title": "Star Wars",
+  "video": false,
+  "vote_average": 8.2,
+  "vote_count": 13711
+}
 ```
 
 <br>
@@ -120,13 +190,13 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
+      |__ CSS
 |__ components/
+      |__ App.jsx
       |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
+      |__ Main.jsx
+      |__ Search.jsx
+      |__ SearchDetail.jsx
       |__ Footer.jsx
 ```
 
@@ -139,10 +209,10 @@ src
 |  Component   |    Type    | State | Props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Search  | Class |   y  |   y   | _The search will send data to API which be returned and set in state._       |
+|   Search Results    |   class    |   y   |   y   | _The search results will be displayed in card form on page._      |
+| Search Detail | Class |   y   |   y   | _The search Details will render individual card details._                 |
+|    Footer    | functional |   n   |   n   | _The footer will show info about site and api(s) used._ |
 
 <br>
 
@@ -154,9 +224,12 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Search & API    |    H     |     4.5 hrs      |     tbd. hrs     |    tbd. hrs    |
+| Search Results Component |    H     |     3 hrs      |    tbd. hrs     |    tbd. hrs     |
+| Search Details Component |    H     |     3 hrs      |    tbd. hrs     |    tbd. hrs     |
+| JSX |    M     |     4 hrs      |    tbd. hrs     |    tbd. hrs     |
+| CSS |    H     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
+| TOTAL               |          |     6 hrs      |     tbd. hrs     |     tbd. hrs     |
 
 <br>
 
@@ -166,7 +239,7 @@ src
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
+| TBD | _Coming soon._ |
 
 <br>
 
@@ -174,8 +247,10 @@ src
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-- _Add user account and auth capabilities._
-- _Utilize the Giphy API to welcome new users with funny gifs._
+- _Save searches to local storage._
+- _CSS Animations._
+_Add video(s)._
+_User sign-in._
 
 <br>
 
