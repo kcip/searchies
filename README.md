@@ -69,13 +69,13 @@
 
 > The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Searchies** The user will be able to search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and render a new component which will give a more detailed description of the search(ed) item(s)  ._
+_ **Searchies** will search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and the site will render a new component which will give a more detailed description of the search(ed) item(s)  ._
 
 <br>
 
 #### Goals
 
-- _React class & function components,_
+- _React class & function components._
 - _Return API data from Search field input value._
 - _Update DOM with search results._
 - _Update DOM to show more detailed information about selected item._
