@@ -75,12 +75,12 @@ _ **Searchies** will search for movie information from an api and render those r
 
 #### Goals
 
-- _React class & function components._
-- _Return API data from Search field input value._
-- _Update DOM with search results._
-- _Update DOM to show more detailed information about selected item._
-- Get better at React State/PreState and Props_
-- _Organize components and code._
+- _React Class & Function Components._
+- _Return API Data from Search Field Input Value._
+- _Update DOM with Search Results._
+- _Update DOM to Show More Detailed Information About Selected Item._
+- Get better at React State/PreState and Props._
+- _Organize Files & Code Based on Components._
 
 <br>
 
@@ -103,7 +103,7 @@ _ **Searchies** will search for movie information from an api and render those r
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
 | The Movie DB |      yes     |_https://www.themoviedb.org/_ | _see below_ |
-| The Movie DB |      yes     |_https://obdb.com/ _ | _see below_ |
+| OBDB |      yes     |_https://obdb.com/_ | _see below_ |
 
 ```
 JSON data sample from your API goes here.
@@ -208,11 +208,11 @@ src
 
 |  Component   |    Type    | State | Props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Search  | Class |   y  |   y   | _The search will send data to API which be returned and set in state._       |
-|   Search Results    |   class    |   y   |   y   | _The search results will be displayed in card form on page._      |
-| Search Detail | Class |   y   |   y   | _The search Details will render individual card details._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about site and api(s) used._ |
+|    Header    | Functional |   N   |   Y   | _The header will contain the navigation and logo._               |
+|  Search  | Class |   Y  |   Y   | _The search will send data to API which be returned and set in state._       |
+|   Search Results    |   Class    |   Y   |   Y   | _The search results will be displayed in card form on page._      |
+| Search Detail | Class |   Y   |   Y   | _The search Details will render individual card details._                 |
+|    Footer    | Functional |   N   |   Y   | _The footer will show info about site and api(s) used._ |
 
 <br>
 
