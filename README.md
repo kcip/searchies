@@ -224,12 +224,13 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Search & API    |    H     |     4.5 hrs      |     tbd. hrs     |    tbd. hrs    |
-| Search Results Component |    H     |     3 hrs      |    tbd. hrs     |    tbd. hrs     |
-| Search Details Component |    H     |     3 hrs      |    tbd. hrs     |    tbd. hrs     |
-| JSX |    M     |     4 hrs      |    tbd. hrs     |    tbd. hrs     |
-| CSS |    H     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
-| TOTAL               |          |     6 hrs      |     tbd. hrs     |     tbd. hrs     |
+| Search & API    |    H     |     5.5 hrs      |     tbd. hrs     |    tbd. hrs    |
+| Search Results Component |    H     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
+| Search Details Component |    H     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
+| JSX |    M     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
+| CSS |    H     |     6 hrs      |    tbd. hrs     |    tbd. hrs     |
+| Responsive |    H     |     4 hrs      |    tbd. hrs     |    tbd. hrs     |
+| TOTAL               |          |     35.5 hrs      |     tbd. hrs     |     tbd. hrs     |
 
 <br>
 
