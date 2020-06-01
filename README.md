@@ -1,6 +1,6 @@
 # searchies
  A movie database search site
- [https://media0.giphy.com/media/5yaou1jFxTV6M/giphy.gif?cid=ecf05e47ba138488b5079e79c6603e258118072f3c139248&rid=giphy.gif]
+ ![](https://media.giphy.com/media/5yaou1jFxTV6M/giphy.gif)
 
 # PROJECT 2 README <!-- omit in toc -->
 
