@@ -205,8 +205,8 @@ src
 
 - _Save searches to local storage._
 - _CSS Animations._
-_ Add video(s)._
-_ User sign-in._
+- _Add video(s)._
+- _User sign-in._
 
 <br>
 
