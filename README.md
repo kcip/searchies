@@ -37,7 +37,7 @@
 
 ### MVP
 
-_ **Searchies** will search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and the site will render a new component which will give a more detailed description of the search(ed) item(s).
+**Searchies** will search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and the site will render a new component which will give a more detailed description of the search(ed) item(s).
 
 <br>
 
