@@ -39,30 +39,9 @@
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](url)
+![https://www.figma.com/file/ptiPJT9kCucBxeUPv9F6UO/Untitled?node-id=0%3A1](url)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Body
-
-![Dummy Link](url)
-
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
+- 
 <br>
 
 ### MVP
