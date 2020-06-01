@@ -20,34 +20,24 @@
   - [Code Showcase](#code-showcase)
   - [Code Issues & Resolutions](#code-issues--resolutions)
 
-## Project Planning
-
-> This section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, it's recommended that you copy and paste the raw template code. The content provided is example content ONLY. You must make changes to all sections as they relate to your own project.
-
-<br>
 
 ### Overview
 
 **Searchies** 
 
-**Project Description** "Searchies" is a movie search site which will return movie, actor/actress, film movie details._
-
+**Project Description** <br>
+"Searchies" is a movie search site which will return movie, actor/actress, film movie details._
 <br>
 
 ### Wireframes
 
 [https://www.figma.com/file/ptiPJT9kCucBxeUPv9F6UO/Untitled?node-id=0%3A1](url)
 
-- 
 <br>
 
 ### MVP
 
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_ **Searchies** will search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and the site will render a new component which will give a more detailed description of the search(ed) item(s)  ._
+_ **Searchies** will search for movie information from an api and render those results in a list. Using React render-dom, the user will be able to click on a selected item, and the site will render a new component which will give a more detailed description of the search(ed) item(s).
 
 <br>
 
@@ -64,24 +54,20 @@ _ **Searchies** will search for movie information from an api and render those r
 
 #### Libraries
 
-> Use this section to list all supporting libraries and their role in the project.
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   | _Will control main site navigation._ |
 | AXIOS | _Will access API data ._ |
-|   React Links   | _Will provide site links between site content._ |
+|   Jest Testing   | _Will provide site testing._ |
 
 <br>
 
 #### Data
 
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
-
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
 | The Movie DB |      yes     |_https://www.themoviedb.org/_ | _see below_ |
-| OBDB |      yes     |_https://obdb.com/_ | _see below_ |
+
 
 ```
 JSON data sample from your API goes here.
@@ -159,8 +145,6 @@ JSON data sample from your API goes here.
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
-
 ```
 src
 |__ assets/
@@ -182,10 +166,9 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
 |  Component   |    Type    | State | Props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|    App    | Class |   Y   |   Y   | _The App will be my main component._               |
 |    Header    | Functional |   N   |   Y   | _The header will contain the navigation and logo._               |
 |  Search  | Class |   Y  |   Y   | _The search will send data to API which be returned and set in state._       |
 |   Search Results    |   Class    |   Y   |   Y   | _The search results will be displayed in card form on page._      |
@@ -195,10 +178,6 @@ src
 <br>
 
 #### Component Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -223,8 +202,6 @@ src
 <br>
 
 ### Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 - _Save searches to local storage._
 - _CSS Animations._
