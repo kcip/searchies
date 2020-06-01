@@ -1,0 +1,17 @@
+.search-container{
+	min-height: 80vh;
+	background: yellow;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.search-form {
+	width: 40vw;
+	background: beige;
+
+}
+.searchResults {
+	width: 60vw;
+	background: lightblue;
+}
