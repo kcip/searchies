@@ -40,7 +40,7 @@
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![https://www.figma.com/file/ptiPJT9kCucBxeUPv9F6UO/Untitled?node-id=0%3A1](url)
+[https://www.figma.com/file/ptiPJT9kCucBxeUPv9F6UO/Untitled?node-id=0%3A1](url)
 
 - 
 <br>
