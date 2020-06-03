@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
-import './MovieCard.css'
+import './movieStyles.css'
 
 class MovieCard extends Component {
 	constructor(props) {
@@ -79,13 +79,14 @@ class MovieCard extends Component {
 				</div>
 
 
+				<ul>
+					{this.state.cast && this.state.cast.slice(0, 7).map((c => (
 
-				{this.state.cast && this.state.cast.slice(0, 7).map((c => (
-					<ul>
 						<li>{c.character} : {c.name}</li>
-					</ul>
 
-				)))}
+
+					)))}
+				</ul>
 
 				{this.state.crew && this.state.crew.slice(0, 7).map(crew => <p>{crew.name} : {crew.department}/{crew.job}</p>)}
 

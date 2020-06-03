@@ -15,15 +15,14 @@ class App extends Component {
 				<Header />
 
 				<Switch>
-
 					<Route path="/" component={Search} exact />
+				</Switch>
 
-
-
+				<Switch>
 					<Route path="/main" component={Main} exact />
+				</Switch>
 
-
-
+				<Switch>
 					<Route path="/movies/:id" component={MovieCard} exact />
 				</Switch>
 

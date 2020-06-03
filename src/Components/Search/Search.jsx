@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+
+//import { faHome } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import axios from 'axios'
-import './search.css'
+import './search.scss'
 import '../SearchDetails/SearchDetails'
 import SearchDetails from '../SearchDetails/SearchDetails'
 class Search extends Component {
@@ -65,45 +68,38 @@ class Search extends Component {
 
 
 
-
-
-
-
-
-
-
-
-
-
 	render() {
 		//const imagePath = `https://image.tmdb.org/t/p/w500`
 		const { searchFieldValue } = this.state
 		return (
-			<div className="search-container">
-				<form className='search-form'>
-					<input
-						onChange={this.handleChange}
-						// onChange={this.movieSearchField}
-						type='search'
-						placeholder='search movies'
-						value={searchFieldValue}
-						name='searchValue'
-						id='search-input'
-					/>
-				</form>
+			<>
+				<div className="searchContainer">
+					<form className='search-form'>
+						<input
+							onChange={this.handleChange}
+							// onChange={this.movieSearchField}
+							type='search'
+							placeholder='search movies'
+							value={searchFieldValue}
+							name='searchValue'
+							id='search-input'
+							autoComplete="off"
+						/>
 
+					</form>
+					{/* <div>
+						<FontAwesomeIcon icon={faHome} />
+					</div> */}
+				</div>
 				<div className="searchResults">
 					{this.state.movies.results && this.state.movies.results.map((movie =>
 						(
 							<SearchDetails movieDetails={movie} />
-							// <div>
-							// 	<h3>{movie.title}</h3>
-							// 	<img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
-							// </div>
+
 						)))}
 				</div>
+			</>
 
-			</div>
 		)
 	}
 }
