@@ -1,17 +1,51 @@
 .search-container{
 	min-height: 80vh;
 	background: yellow;
-	display: flex;
-	flex-direction: row;
+	flex: 1;
+	display: grid;
+	grid-template-columns: 40vw 60vw;
+	margin-top: 90px;
 
 }
 
 .search-form {
-	width: 40vw;
-	background: beige;
+	width: 30vw;
+    height: 50vh;
+    background: beige;
+    position: fixed;
+    left: 2%;
+    top: 100px;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+input {
+	width: 80%;
 }
 .searchResults {
 	width: 60vw;
 	background: lightblue;
+	flex: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 2;
+	grid-gap: 10px;
+}
+
+.searchDetails-results {
+	object-fit: cover;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    justify-self: center;
+}
+
+.movieCard-img {
+	background: #000;
 }

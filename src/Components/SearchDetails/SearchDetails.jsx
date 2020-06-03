@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { withRouter } from 'react-router-dom'
+import { Link } from "react-router-dom";
+//import axios from 'axios';
 class SearchDetails extends Component {
 
-	constructor(props) {
-		super(props)
-	}
-
-	componentDidMount = () => {
-		let movieArray = this.props.movies
-	}
-
-
-
-
-
 	render() {
+		let movies = this.props.movieDetails;
+		//console.log(movies)
 		return (
-			<div>
-				search details
-			</div>
+			<>
+				<Link to={`/movies/${movies.id}`}>
+					<div className="searchDetails-results" key={movies.title}>
+						<img className="movieCard-img" src={`https://image.tmdb.org/t/p/w200/${movies.poster_path}`} />
+						<p>{movies.title}</p>
+						<p>{movies.release_date}</p>
+					</div>
+				</Link>
+			</>
 		)
 	}
 }
 
 
-export default withRouter(SearchDetails);
+export default SearchDetails;

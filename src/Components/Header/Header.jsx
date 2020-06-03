@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { withRouter } from 'react-router-dom'
+import { Switch, Route, Link } from "react-router-dom";
 import './header.css';
 
 class Header extends Component {
@@ -17,4 +16,4 @@ class Header extends Component {
 		)
 	}
 }
-export default withRouter(Header);
+export default Header;
