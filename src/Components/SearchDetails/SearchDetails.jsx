@@ -25,4 +25,5 @@ class SearchDetails extends Component {
 }
 
 
+
 export default SearchDetails;

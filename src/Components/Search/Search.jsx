@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 //import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import axios from 'axios'
 import './search.scss'
-import '../SearchDetails/SearchDetails'
+// import '../SearchDetails/SearchDetails'
 import SearchDetails from '../SearchDetails/SearchDetails'
 class Search extends Component {
 	constructor() {
