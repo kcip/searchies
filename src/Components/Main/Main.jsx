@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import Form from '../Form/Form'
 import ReturnedSearch from '../ReturnedSearch/ReturnedSearch'
+import Hero from '../Hero/Hero'
 import './main.css'
+
 // import '../Search/search.scss'
 
 class Main extends Component {
@@ -61,13 +63,19 @@ class Main extends Component {
 		const { searchFieldValue } = this.state
 		return (
 			<>
+
 				<main className="main">
 
-					<Form
-						handleChange={this.handleChange}
-						value={searchFieldValue}
-					/>
+					<div><i className="fab fa-adn"></i></div>
+					<div className="hero">
+						<Form
+							handleChange={this.handleChange}
+							value={searchFieldValue}
+						/>
+					</div>
 
+
+					<h2>Search Results</h2>
 					<ReturnedSearch searchDetails={this.state.movies} />
 
 				</main>
