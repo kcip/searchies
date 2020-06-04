@@ -8,11 +8,22 @@
 
 body {
 	box-sizing: border-box;
-	/* //background-color: #313638; */
+	background-color: #F9F9F9;
+	font-family: 'Cabin Condensed', sans-serif;
 }
 
 #root {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+}
+.outerWrapper {
+	background: #1f1f1f;
+	margin: 5px;
+	margin-top: 60px;
+	border-radius: 5px;
+	min-height: calc(100vh - 5px);
+	/* //height: 2000px; */
+	margin-bottom: 50px;
+	z-index: 10;
 }

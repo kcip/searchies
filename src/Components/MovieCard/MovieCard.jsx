@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
-import './movieStyles.css'
+import './movieStyles.scss'
 
 class MovieCard extends Component {
 	constructor(props) {
@@ -58,41 +58,49 @@ class MovieCard extends Component {
 
 		return (
 
+			<div className="outerWrapper">
+				<div className="movieCard__wrapper">
+
+					<div className="movieCard__image">
+						<img className="movieCard__image--img" src={`https://image.tmdb.org/t/p/w400/${this.state.movie.poster_path}`} />
+						<span className="movieCard__image--span">{this.state.movie.tagline}</span>
+					</div>
 
 
-			<div className="moveCard__wrapper">
+					<div className="movieCard__details">
+						<h3 className="movieCard__details--title">{this.state.movie.title}</h3>
 
-				<div className="movieCard__image--div">
-					<img className="movieCard__image--img" src={`https://image.tmdb.org/t/p/w400/${this.state.movie.poster_path}`} />
-					<span className="movieCard__image--span">{this.state.movie.tagline}</span>
+					</div>
+
+
+					<div className="movieCard__overview">
+						<p className="movieCard__overview--p">{this.state.movie.overview}</p>
+					</div>
+
+
+					<div className="movieCard__castAndCrew">
+						<h3>Cast</h3>
+						{this.state.cast && this.state.cast.slice(0, 7).map((c => (
+							<p>{c.name} : {c.character}</p>
+						)))}
+					</div>
+
+					<div className="movieCard__castAndCrew">
+						<h3>Crew</h3>
+						{this.state.crew && this.state.crew.slice(0, 7).map((crew => (
+							<p>{crew.name} : {crew.department}/{crew.job}</p>)))}
+					</div>
+
+
+
+
+					<h5 className="movieCard__details--releaseDate">Release Date: {this.state.movie.release_date}</h5>
+
 				</div>
-
-
-				<div className="movieCard__details--wrapper">
-					<h3 className="movieCard__details--title">{this.state.movie.title}</h3>
-					<h5 className="movieCard__details--releaseDate">{this.state.movie.release_date}</h5>
-				</div>
-
-
-				<div className="moveCard__overview">
-					<p className="movieCard__overview--p">{this.state.movie.overview}</p>
-				</div>
-
-
-				<ul>
-					{this.state.cast && this.state.cast.slice(0, 7).map((c => (
-
-						<li>{c.character} : {c.name}</li>
-
-
-					)))}
-				</ul>
-
-				{this.state.crew && this.state.crew.slice(0, 7).map(crew => <p>{crew.name} : {crew.department}/{crew.job}</p>)}
-
-
 
 			</div>
+
+
 
 
 

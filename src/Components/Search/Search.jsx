@@ -72,7 +72,7 @@ class Search extends Component {
 		//const imagePath = `https://image.tmdb.org/t/p/w500`
 		const { searchFieldValue } = this.state
 		return (
-			<>
+			<div class="outerWrapper">
 				<div className="searchContainer">
 					<form className='search-form'>
 						<input
@@ -98,7 +98,7 @@ class Search extends Component {
 
 						)))}
 				</div>
-			</>
+			</div>
 
 		)
 	}

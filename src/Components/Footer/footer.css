@@ -1,6 +1,11 @@
 .footer {
-	min-width: 100vw;
-	max-height: 75px;
-	border: 1px solid black;
+	/* min-width: 100vw; */
+	height: 105px;
+	background: #000;
+	position: sticky;
+	bottom: 0;
+	margin: 0 5px 0 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	
 }

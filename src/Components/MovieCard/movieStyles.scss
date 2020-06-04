@@ -1,0 +1,76 @@
+.movieCard__wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-rows: auto;
+	min-height: 100vh;
+	min-width: 100vw;
+	color: #e9dfd5;
+	padding: 10px;
+	
+	//margin-top: 45px;
+	//background: linear-gradient(135deg,#0A0A0A, #242423);
+}
+
+.movieCard__image{
+	object-fit: cover;
+	padding: 1rem;
+	 &--img {
+		 width: 100%;
+		 border-radius: 5px;
+		//  border-bottom-left-radius: 5px;
+		//  border-bottom-right-radius: 5px;
+	 }
+}
+
+.movieCard__image--span {
+	display: block;
+	text-align: center;
+	margin: 5px 0;
+	color: #E4B363;
+  font-weight: bold;
+	padding-top: 10px;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+.movieCard__details{
+	
+	justify-self: center;
+	 &--title {
+		text-align: center;
+		font-size: 2.5rem;
+		color: #e8e9eb;
+		font-weight: bold;
+		font-family: 'Cabin Condensed', sans-serif;
+	 }
+}
+.movieCard__overview {
+	margin: 5px;
+	 &--p {
+		 font-size: 15px;
+		 line-height: 1.5;
+		 text-align: center;
+		 margin: 3px 0;
+		 padding: 0 5px;
+		 font-family: 'Cabin Condensed', sans-serif;
+	 }
+}
+
+.movieCard__castAndCrew {
+	margin: 5px;
+	display: grid;
+	grid-template-columns:  1fr;
+	grid-template-rows: auto;
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+
+	 & h3 {
+		 grid-column: 1 / -1;
+		 justify-self: center;
+		 font-family: 'Cabin Condensed', sans-serif;
+	 }
+	 
+}
+.movieCard__details--releaseDate {
+	text-align: center;
+	margin: 5px;
+	font-family: 'Cabin Condensed', sans-serif;
+}

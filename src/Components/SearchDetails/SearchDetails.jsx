@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 //import axios from 'axios';
+//import '.searchDetails.scss'
 class SearchDetails extends Component {
 
 	render() {
 		let movies = this.props.movieDetails;
 		//console.log(movies)
 		return (
-			<div>
+			<div className="searchDetails__outerWrapper">
 				<Link to={`/movies/${movies.id}`}>
 					<div className="searchDetails__container" key={movies.title}>
 						<img className="searchDetails--img" src={`https://image.tmdb.org/t/p/w200/${movies.poster_path}`} />
