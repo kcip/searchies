@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import Form from '../Form/Form'
 import ReturnedSearch from '../ReturnedSearch/ReturnedSearch'
-import Hero from '../Hero/Hero'
+import '../Hero/hero.scss'
 import './main.css'
+import TopRated from '../TopRated/TopRated';
 
 // import '../Search/search.scss'
 
@@ -14,8 +15,10 @@ class Main extends Component {
 		this.state = {
 			movies: [],
 			searchFieldValue: '',
-			loading: true,
-			message: ''
+			loading: false,
+			message: '',
+
+
 		}
 		this.cancel = '';
 	}
@@ -66,7 +69,6 @@ class Main extends Component {
 
 				<main className="main">
 
-					<div><i className="fab fa-adn"></i></div>
 					<div className="hero">
 						<Form
 							handleChange={this.handleChange}
@@ -75,8 +77,15 @@ class Main extends Component {
 					</div>
 
 
-					<h2>Search Results</h2>
-					<ReturnedSearch searchDetails={this.state.movies} />
+
+					<TopRated />
+
+					{this.state.loading ?
+						<ReturnedSearch searchDetails={this.state.movies} /> : false
+					}
+
+
+
 
 				</main>
 
