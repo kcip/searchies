@@ -1,6 +1,6 @@
 import React from 'react'
 import './hero.scss'
-import heroImage from '.../Resources/hero.jpg'
+import heroImage from '../../Resources/hero.jpeg'
 function Hero() {
 	const image = heroImage
 	return (

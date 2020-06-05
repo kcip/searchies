@@ -8,8 +8,11 @@
 
 body {
 	box-sizing: border-box;
-	background-color: #F9F9F9;
+	background: pink;
+	/* background-color: #F9F9F9; */
 	font-family: 'Cabin Condensed', sans-serif;
+	/* background: rgb(18,23,24);
+	background: linear-gradient(to bottom, rgba(18,23,24,1) 100%, rgba(20,20,23,0.8) 50%); */
 }
 
 #root {

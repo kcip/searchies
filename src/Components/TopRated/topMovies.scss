@@ -1,19 +1,39 @@
-.topRatedWrapper {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	width: 42%;
-	background: black;
-	padding: 3px;
-	border-radius: 5px;
+// .topRatedWrapper {
+// 	display: grid;
+// 	grid-template-columns: repeat(5, 1fr);
+// 	grid-template-rows: repeat(4, 1fr);
+// 	width: 42%;
+// 	background: black;
+// 	padding: 3px;
+// 	border-radius: 5px;
+
+// }
+.topRated {
+	margin: 0 0 100px 0;
+	height: 50vh;
+	background-color: #1E2429;
+	padding: 50px 0;
+	position: relative;
+
+
+	&__textWrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+		position: absolute;
+		top: -20px;
+
+	}
+
+
+	&__textWrapper--text {
+		color: #f9f9f9;
+		font-size: 1.5rem;
+	}
 
 }
-
-.topRated {
-		width: 80px;
-	&--img {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-	}
+.slick-slide img {
+	border-radius: 5px;
 }

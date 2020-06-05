@@ -4,9 +4,9 @@ import Form from '../Form/Form'
 import ReturnedSearch from '../ReturnedSearch/ReturnedSearch'
 import '../Hero/hero.scss'
 import './main.css'
+import SiteInfo from '../SiteInfo/SiteInfo'
 import TopRated from '../TopRated/TopRated';
 
-// import '../Search/search.scss'
 
 class Main extends Component {
 	constructor() {
@@ -68,25 +68,18 @@ class Main extends Component {
 			<>
 
 				<main className="main">
-
 					<div className="hero">
 						<Form
 							handleChange={this.handleChange}
 							value={searchFieldValue}
 						/>
 					</div>
-
-
-
+					<SiteInfo />
 					<TopRated />
 
 					{this.state.loading ?
 						<ReturnedSearch searchDetails={this.state.movies} /> : false
 					}
-
-
-
-
 				</main>
 
 

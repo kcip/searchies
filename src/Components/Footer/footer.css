@@ -1,11 +1,27 @@
 .footer {
 	/* min-width: 100vw; */
 	height: 105px;
-	background: #000;
+	background-color: #F9F9F9;
 	position: sticky;
 	bottom: 0;
 	margin: 0 5px 0 5px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
 	
+}
+.footer__content--apiInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.apiLogo {
+	filter: grayscale(90%);
+	width: 30px;
+	height: auto;
+	margin: 0 10px;
 }

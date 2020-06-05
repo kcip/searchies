@@ -1,0 +1,46 @@
+.siteInfo__container {
+	width: 100vw;
+	height: 25vh;
+	background: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin: 100px 0;
+}
+.siteInfo__container--side {
+	width: 45%;
+	
+
+	 & .leftSide{
+		 background: pink;
+	 }
+
+	 & .rightSide {
+		 background: yellow;
+	 }
+
+	 & .siteInfo--text {
+		color: #C2C2C1;
+
+		
+		}
+	 }
+
+	 
+	 .mainText {
+		font-size: 4rem;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	.subText {
+		font-size: 2.8rem;
+		color: #333;
+	}
+.siteInfo__container--img{
+	width: 450px;
+	border-radius: 4px;
+	height: auto;
+	filter: grayscale(100%);
+}

@@ -1,10 +1,17 @@
 .returnedSearchResults {
+	background: #121718;
+	// opacity: .8;
+	position: absolute;
+	top: 200px;
+	right: 0;
+	left: 0;
 
 	& h2 {
-		font-size: 3rem;
-		margin-bottom: -13px;
-		color: red;
-		margin-left: 10px;
+		font-size: 1.8rem;
+		color:  #f9f9f9;
+		margin-left: 25px;
+		z-index: 5;
+		padding: 10px 0 0 5px;
 	}
 
 }
@@ -25,7 +32,7 @@
 	padding: 1rem;
 	grid-gap: 5px;
 	position: relative;
-	background: red;
+	background: #121718;
 	// border: 1px solid black;
 
 	 &--wrapper {
