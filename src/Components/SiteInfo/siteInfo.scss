@@ -26,15 +26,19 @@
 		width: 49%;
 	}
 
-	 & .leftSide{
-		 background: pink;
+	 &.leftSide{
+		display: flex;
+    justify-content: center;
 	 }
 
 	 &.rightSide {
+		text-align: center;
 		 @media only screen and (max-width: 899px){
 			height: 8vh;
 			align-items: center;
 			flex-direction: column;
+
+			
 		 }
 	 }
 
@@ -56,11 +60,14 @@
 	border-radius: 4px;
 	height: auto;
 	filter: grayscale(100%);
+	float: right;
 	@media only screen and (max-width: 899px){
 		width: 80vw;
+		float: unset;
 	}
 	@media only screen and (min-width: 900px) and (max-width:1250px ){
 		width: 45vw;
+		float: unset;
 	}
 }
 

@@ -49,31 +49,177 @@ class TopRated extends Component {
 
 	render() {
 		const settings = {
+			swipeToSlide: true,
 			autoplay: true,
-			className: "center",
-			centerMode: true,
+			dots: false,
+			arrows: false,
 			infinite: true,
-			centerPadding: "60px",
-			slidesToShow: 3,
-			speed: 1500,
-			autoPlayspeed: 3000,
-			rows: 1,
-			slidesPerRow: 2,
-			cssEase: 'linear'
+			autoplaySpeed: 2500,
+			speed: 2500,
+			slidesToShow: 6.5,
+			slidesToScroll: 4,
+			cssEase: 'linear',
+			className: "center",
+			responsive: [
+				{
+					breakpoint: 1400,
+					settings: {
+						className: "center",
+						slidesToShow: 5,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: false
+					}
+				},
+				{
+					breakpoint: 1024,
+					settings: {
+						className: "center",
+						slidesToShow: 4.5,
+						slidesToScroll: 3
+					}
+				},
+				{
+					breakpoint: 980,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 880,
+					settings: {
+						slidesToShow: 3.75,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 750,
+					settings: {
+						slidesToShow: 3.5,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 2.75,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 580,
+					settings: {
+						slidesToShow: 2.5,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						className: 'center',
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 380,
+					settings: {
+						centerMode: true,
+						slidesToShow: 2,
+						centerMode: true,
+						slidesToScroll: 1
+					}
+				}
+			]
+
 		}
 
 		const settings2 = {
+			swipeToSlide: true,
 			autoplay: true,
-			className: "center",
-			centerMode: true,
+			dots: false,
+			arrows: false,
 			infinite: true,
-			centerPadding: "60px",
-			slidesToShow: 3,
+			autoplaySpeed: 2000,
 			speed: 2000,
-			autoPlayspeed: 1500,
-			rows: 1,
-			slidesPerRow: 2,
-			cssEase: 'linear'
+			slidesToShow: 6.5,
+			slidesToScroll: 4,
+			cssEase: 'linear',
+			className: "center",
+			responsive: [
+				{
+					breakpoint: 1400,
+					settings: {
+						className: "center",
+						slidesToShow: 5,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: false
+					}
+				},
+				{
+					breakpoint: 1024,
+					settings: {
+						className: "center",
+						slidesToShow: 4.5,
+						slidesToScroll: 3
+					}
+				},
+				{
+					breakpoint: 980,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 880,
+					settings: {
+						slidesToShow: 3.75,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 750,
+					settings: {
+						slidesToShow: 3.5,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 2.75,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 580,
+					settings: {
+						slidesToShow: 2.5,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						className: 'center',
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 380,
+					settings: {
+						centerMode: true,
+						slidesToShow: 2,
+						centerMode: true,
+						slidesToScroll: 1
+					}
+				}
+			]
+
 		}
 
 
