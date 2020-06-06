@@ -1,3 +1,15 @@
+.outerWrapper {
+	@media only screen and (min-width: 600px){
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+	}
+}
+
+
 .movieCard__wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -7,21 +19,36 @@
 	color: #e9dfd5;
 	padding: 10px;
 	
-	//margin-top: 45px;
-	//background: linear-gradient(135deg,#0A0A0A, #242423);
+
+	@media only screen and (min-width: 600px){
+		display: grid;
+		grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 5vh);
+    border-radius: 5px;
+    //background: pink;
+	}
 }
+
 
 .movieCard__image{
 	object-fit: cover;
 	padding: 1rem;
 	 &--img {
 		 width: 100%;
+		 max-width: 650px;
 		 border-radius: 5px;
-		//  border-bottom-left-radius: 5px;
-		//  border-bottom-right-radius: 5px;
+	 }
+	 @media only screen and (min-width: 600px){
+		grid-row: 1 / span 5;
+    grid-column: 1 / span 4;
 	 }
 }
-
+.movie__details--tagline {
+	@media only screen and (min-width: 600px){
+		grid-row: 2;
+    grid-column: 5 / -1;
+	}
+}
 .movieCard__image--span {
 	display: block;
 	text-align: center;
@@ -32,7 +59,6 @@
 	font-family: 'Cabin Condensed', sans-serif;
 }
 .movieCard__details{
-	
 	justify-self: center;
 	 &--title {
 		text-align: center;
@@ -41,6 +67,11 @@
 		font-weight: bold;
 		font-family: 'Cabin Condensed', sans-serif;
 	 }
+	 @media only screen and (min-width: 600px){
+		grid-row: 1;
+    grid-column: 5 / -1;
+	 }
+
 }
 .movieCard__overview {
 	margin: 5px;
@@ -49,8 +80,14 @@
 		 line-height: 1.5;
 		 text-align: center;
 		 margin: 3px 0;
-		 padding: 0 5px;
+		 padding: 0 20px;
+		 max-width: 500px;
 		 font-family: 'Cabin Condensed', sans-serif;
+	 }
+	 @media only screen and (min-width: 600px){
+		grid-row: 3 / span 2;
+		grid-column: 5 / -1;
+		margin: 0 auto;
 	 }
 }
 
@@ -67,10 +104,58 @@
 		 justify-self: center;
 		 font-family: 'Cabin Condensed', sans-serif;
 	 }
+
+	 @media only screen and (min-width: 600px){
+		display: unset;
+		
+	 }
+	 @media only screen and ( min-width: 599px) and (max-width: 919px){
+		 text-align: unset;
+	 }
 	 
+}
+
+.cast {
+	@media only screen and (min-width: 600px){
+		grid-column: 1 / span 4;
+		grid-row: 10 / span 2;
+		justify-self: center;
+	}
+	@media only screen and (min-width: 920px){
+		grid-column: 5 / -1;
+		grid-row: 8 / span 2;
+		
+
+	}
+}
+
+.crew {
+	@media only screen and (min-width: 600px){
+		grid-column: 7 / span 4;
+		grid-row: 10 / span 2;
+		justify-self: center;
+	}
+	@media only screen and (min-width: 920px){
+		grid-column: 5 / -1;
+		grid-row: 11 / span 2;
+		
+
+	}
 }
 .movieCard__details--releaseDate {
 	text-align: center;
 	margin: 5px;
 	font-family: 'Cabin Condensed', sans-serif;
+	@media only screen and (min-width: 600px){
+		grid-row: 11;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+	}
+	@media only screen and (min-width: 920px){
+		grid-row: 12;
+    grid-column: 7 / span 2;
+		justify-self: center;
+		align-self: unset;
+	}
 }

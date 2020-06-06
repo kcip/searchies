@@ -63,13 +63,13 @@ class MovieCard extends Component {
 
 					<div className="movieCard__image">
 						<img className="movieCard__image--img" src={`https://image.tmdb.org/t/p/w400/${this.state.movie.poster_path}`} />
-						<span className="movieCard__image--span">{this.state.movie.tagline}</span>
 					</div>
 
-
+					<div className="movie__details--tagline">
+						<span className="movieCard__image--span">{this.state.movie.tagline}</span>
+					</div>
 					<div className="movieCard__details">
 						<h3 className="movieCard__details--title">{this.state.movie.title}</h3>
-
 					</div>
 
 
@@ -78,14 +78,14 @@ class MovieCard extends Component {
 					</div>
 
 
-					<div className="movieCard__castAndCrew">
+					<div className="movieCard__castAndCrew cast">
 						<h3>Cast</h3>
 						{this.state.cast && this.state.cast.slice(0, 7).map((c => (
 							<p>{c.name} : {c.character}</p>
 						)))}
 					</div>
 
-					<div className="movieCard__castAndCrew">
+					<div className="movieCard__castAndCrew crew">
 						<h3>Crew</h3>
 						{this.state.crew && this.state.crew.slice(0, 7).map((crew => (
 							<p>{crew.name} : {crew.department}/{crew.job}</p>)))}
