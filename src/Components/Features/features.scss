@@ -4,6 +4,12 @@
 	display: flex;
 	flex-direction: row;
 	background: #1E2429;
+
+	@media only screen and (max-width: 799px){
+		flex-direction: column;
+		height: auto;
+		padding: 0 0 2rem 0;
+	}
 }
 .features__wrapper {
 	display: grid;
@@ -11,10 +17,12 @@
 	grid-template-rows: 50px repeat(3, 1fr);
 	grid-auto-flow: dense;
 	grid-auto-rows: 200px;
+	@media only screen and (max-width: 799px){
+		grid-template-rows: 50px repeat(2, 1fr);
+	}
 }
 
 .features--container {
-
 
 	&:nth-child(2){
 		grid-column: 1;
@@ -57,10 +65,17 @@
 	margin-top: -19px;
 	z-index: 5;
 	font-size: 1.5rem;
+	
+	}
+
+.text-right {
+	@media only screen and (max-width: 799px){
+		
+			margin-top: 5px;
+		
 }
 
-
-
+}
 .features--img {
 	width: 100%;
 	height: 100%;

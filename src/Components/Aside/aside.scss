@@ -1,5 +1,17 @@
 .aside {
 	min-width: 100vw;
 	height: 40vh;
-	//background: yellow;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	 p{
+		 color: white;
+		 margin: 8px 10px;
+		 padding: 5px 10px;
+		 text-align: center;
+		 font-size: 1.8rem;
+	 }
 }
+

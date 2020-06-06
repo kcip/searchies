@@ -20,7 +20,7 @@ function SiteInfo() {
 					<span className="fontAwesomeIcon">
 						<FontAwesomeIcon icon={faQuoteLeft} color="#E1E1E0" />
 					</span>
-					<span>home for all your movie needs</span>
+					<span className="callout--text">home for all your movie needs</span>
 
 					<span className="fontAwesomeIcon">
 						<FontAwesomeIcon icon={faQuoteRight} color="#E1E1E0" />
