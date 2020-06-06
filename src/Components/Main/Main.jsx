@@ -6,7 +6,7 @@ import '../Hero/hero.scss'
 import './main.css'
 import SiteInfo from '../SiteInfo/SiteInfo'
 import TopRated from '../TopRated/TopRated';
-
+import Features from '../Features/Features'
 
 class Main extends Component {
 	constructor() {
@@ -76,6 +76,7 @@ class Main extends Component {
 					</div>
 					<SiteInfo />
 					<TopRated />
+					<Features />
 
 					{this.state.loading ?
 						<ReturnedSearch searchDetails={this.state.movies} /> : false

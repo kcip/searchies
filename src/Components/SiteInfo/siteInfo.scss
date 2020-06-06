@@ -27,13 +27,6 @@
 		}
 	 }
 
-	 
-	 .mainText {
-		font-size: 4rem;
-		font-weight: bold;
-		color: #fff;
-	}
-
 	.subText {
 		font-size: 2.8rem;
 		color: #333;
@@ -43,4 +36,14 @@
 	border-radius: 4px;
 	height: auto;
 	filter: grayscale(100%);
+}
+
+.svg-inline--fa {
+	height: 20px;
+}
+
+.mainText {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #fff!important;
 }

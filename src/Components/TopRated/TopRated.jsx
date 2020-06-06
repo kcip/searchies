@@ -85,7 +85,7 @@ class TopRated extends Component {
 					<div className="topRated__textWrapper">
 						<p className="topRated__textWrapper--text">popular movie choices</p>
 					</div>
-					<div className="topRated__wrapper">
+					<div className="topRated__wrapper margin-bottom">
 						<Slider  {...settings}>
 							{this.state.topMovies && this.state.topMovies.map((movie => (
 								<div className="topRated__wrapper--images">
