@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './header.scss';
 
 class Header extends Component {
@@ -7,7 +7,7 @@ class Header extends Component {
 		return (
 
 			<header className="header">
-				<Link to="/main" exact>
+				<Link to="/" exact>
 					<div className="header__logoWrapper">
 						<p className="header__logoWrapper--logo">searchies...</p>
 					</div>

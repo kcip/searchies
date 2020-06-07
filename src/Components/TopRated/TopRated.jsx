@@ -137,7 +137,6 @@ class TopRated extends Component {
 					settings: {
 						centerMode: true,
 						slidesToShow: 2,
-						centerMode: true,
 						slidesToScroll: 1,
 						swipeToSlide: true,
 						autoplay: false
@@ -153,8 +152,8 @@ class TopRated extends Component {
 			dots: false,
 			arrows: false,
 			infinite: true,
-			autoplaySpeed: 3500,
-			speed: 3500,
+			autoplaySpeed: 5500,
+			speed: 5500,
 			slidesToShow: 6.5,
 			slidesToScroll: 4,
 			cssEase: 'linear',
@@ -235,7 +234,6 @@ class TopRated extends Component {
 					settings: {
 						centerMode: true,
 						slidesToShow: 2,
-						centerMode: true,
 						slidesToScroll: 1,
 						swipeToSlide: true,
 						autoplay: false

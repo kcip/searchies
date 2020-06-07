@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
+//import ComingSoon from '../ComingSoon/ComingSoon'
 import './features.scss'
+
 class Features extends Component {
 	constructor() {
 		super()
@@ -46,13 +49,17 @@ class Features extends Component {
 				<div className="features__wrapper">
 					<p className="features--text text-left">coming soon</p>
 					{this.state.comingSoonMovies && this.state.comingSoonMovies.slice(0, 6).map((movie => (
+
+
 						<div className="features--container">
 
-							<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
-							{/* <p>{movie.original_title}</p>
-							<p>{movie.overview}</p>
-							<p>{movie.release_date}</p> */}
+							<Link to={`/comingSoon`}>
+								<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
+							</Link>
+
 						</div>
+
+
 
 					)))}
 				</div>
@@ -60,10 +67,11 @@ class Features extends Component {
 					<p className="features--text text-right">new movies</p>
 					{this.state.newMovies && this.state.newMovies.slice(0, 6).map((movie => (
 						<div className="features--container">
-							<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
-							{/* <p>{movie.original_title}</p>
-							<p>{movie.overview}</p>
-							<p>{movie.release_date}</p> */}
+							<Link to={`/newRelease`}>
+								<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
+							</Link>
+
+
 						</div>
 					)))}
 				</div>

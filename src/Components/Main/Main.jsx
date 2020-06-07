@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+//import { Route } from "react-router-dom";
 import axios from 'axios';
 import Form from '../Form/Form'
 import ReturnedSearch from '../ReturnedSearch/ReturnedSearch'
@@ -8,7 +9,7 @@ import SiteInfo from '../SiteInfo/SiteInfo'
 import TopRated from '../TopRated/TopRated';
 import Aside from '../Aside/Aside'
 import Features from '../Features/Features'
-
+//import ComingSoon from '../ComingSoon/ComingSoon'
 class Main extends Component {
 	constructor() {
 		super()
@@ -79,7 +80,6 @@ class Main extends Component {
 					<TopRated />
 					<Aside />
 					<Features />
-
 					{this.state.loading ?
 						<ReturnedSearch searchDetails={this.state.movies} /> : false
 					}
