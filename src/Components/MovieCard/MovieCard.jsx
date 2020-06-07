@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
 import './movieStyles.scss'
-
+import image from '../../Resources/missingImage.png'
 class MovieCard extends Component {
 	constructor(props) {
 		super(props)
@@ -55,14 +55,13 @@ class MovieCard extends Component {
 	}
 
 	render() {
-
 		return (
 
 			<div className="outerWrapper">
 				<div className="movieCard__wrapper">
 
 					<div className="movieCard__image">
-						<img className="movieCard__image--img" src={`https://image.tmdb.org/t/p/w400/${this.state.movie.poster_path}`} />
+						<img className="movieCard__image--img" src={this.state.movie.poster_path && this.state.movie.poster_path != 'null' ? `https://image.tmdb.org/t/p/w400/${this.state.movie.poster_path}` : image} />
 					</div>
 
 					<div className="movie__details--tagline">

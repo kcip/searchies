@@ -54,8 +54,8 @@ class TopRated extends Component {
 			dots: false,
 			arrows: false,
 			infinite: true,
-			autoplaySpeed: 2500,
-			speed: 2500,
+			autoplaySpeed: 4500,
+			speed: 4500,
 			slidesToShow: 6.5,
 			slidesToScroll: 4,
 			cssEase: 'linear',
@@ -65,10 +65,18 @@ class TopRated extends Component {
 					breakpoint: 1400,
 					settings: {
 						className: "center",
-						slidesToShow: 5,
+						slidesToShow: 6,
 						slidesToScroll: 3,
 						infinite: true,
 						dots: false
+					}
+				},
+				{
+					breakpoint: 1100,
+					settings: {
+						className: "center",
+						slidesToShow: 5,
+						slidesToScroll: 3
 					}
 				},
 				{
@@ -119,7 +127,9 @@ class TopRated extends Component {
 					settings: {
 						className: 'center',
 						slidesToShow: 2,
-						slidesToScroll: 1
+						slidesToScroll: 1,
+						swipeToSlide: true,
+						autoplay: false
 					}
 				},
 				{
@@ -128,7 +138,9 @@ class TopRated extends Component {
 						centerMode: true,
 						slidesToShow: 2,
 						centerMode: true,
-						slidesToScroll: 1
+						slidesToScroll: 1,
+						swipeToSlide: true,
+						autoplay: false
 					}
 				}
 			]
@@ -141,8 +153,8 @@ class TopRated extends Component {
 			dots: false,
 			arrows: false,
 			infinite: true,
-			autoplaySpeed: 2000,
-			speed: 2000,
+			autoplaySpeed: 3500,
+			speed: 3500,
 			slidesToShow: 6.5,
 			slidesToScroll: 4,
 			cssEase: 'linear',
@@ -152,10 +164,17 @@ class TopRated extends Component {
 					breakpoint: 1400,
 					settings: {
 						className: "center",
-						slidesToShow: 5,
+						slidesToShow: 6,
 						slidesToScroll: 3,
-						infinite: true,
-						dots: false
+						infinite: true
+					}
+				},
+				{
+					breakpoint: 1100,
+					settings: {
+						className: "center",
+						slidesToShow: 5,
+						slidesToScroll: 3
 					}
 				},
 				{
@@ -206,7 +225,9 @@ class TopRated extends Component {
 					settings: {
 						className: 'center',
 						slidesToShow: 2,
-						slidesToScroll: 1
+						slidesToScroll: 1,
+						swipeToSlide: true,
+						autoplay: false
 					}
 				},
 				{
@@ -215,7 +236,9 @@ class TopRated extends Component {
 						centerMode: true,
 						slidesToShow: 2,
 						centerMode: true,
-						slidesToScroll: 1
+						slidesToScroll: 1,
+						swipeToSlide: true,
+						autoplay: false
 					}
 				}
 			]

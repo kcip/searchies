@@ -7,7 +7,7 @@ class Header extends Component {
 		return (
 
 			<header className="header">
-				<Link to="/" exact>
+				<Link to="/main" exact>
 					<div className="header__logoWrapper">
 						<p className="header__logoWrapper--logo">searchies...</p>
 					</div>

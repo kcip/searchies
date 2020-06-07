@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './searchResults/searchResults.scss'
+import './searchResults/searchResults.scss';
+
 class SearchResults extends Component {
 	constructor(props) {
 		super(props)
