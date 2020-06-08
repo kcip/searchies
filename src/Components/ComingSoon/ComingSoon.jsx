@@ -42,12 +42,11 @@ class ComingSoon extends Component {
 					<p>to a theatre near you</p>
 				</div>
 
-
 				<div className="movieList--wrapper">
 					{this.state.comingSoonMovies && this.state.comingSoonMovies.map((movie => (
 						<div className="movieList">
 							<div className="image__container">
-								<img className="image__container--image" src={movie.poster__path != 'null' ? `https://image.tmdb.org/t/p/w200/${movie.poster_path}` : image} />
+								<img className="image__container--image" src={movie.poster__path !== 'null' ? `https://image.tmdb.org/t/p/w200/${movie.poster_path}` : image} alt={movie.title} />
 							</div>
 							<div className="movieList__paragraph">
 								<div className="readMore" onClick={this.showMore}>read more</div>
@@ -67,11 +66,7 @@ class ComingSoon extends Component {
 
 							</div>
 
-
 						</div>
-
-
-
 
 					)))}
 				</div>

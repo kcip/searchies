@@ -6,11 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-		width: 100vw;
-		
+		width: 100vw;	
 	}
 }
-
 
 .movieCard__wrapper {
 	margin-top: -5px;
@@ -18,22 +16,18 @@
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-template-rows: auto;
 	min-height: 100vh;
-	//min-width: 100vw;
 	color: #e9dfd5;
 	padding: 10px;
 	background: rgb(18,23,24);
 	background: linear-gradient(to bottom, rgba(18,23,24,1) 100%, rgba(20,20,23,0.8) 50%);
 	
-
 	@media only screen and (min-width: 600px){
 		display: grid;
 		grid-template-columns: repeat(10, 10vw);
     grid-template-rows: repeat(10, 5vh);
     border-radius: 5px;
-    //background: pink;
 	}
 }
-
 
 .movieCard__image{
 	object-fit: cover;
@@ -129,8 +123,6 @@
 	@media only screen and (min-width: 920px){
 		grid-column: 5 / -1;
 		grid-row: 8 / span 2;
-		
-
 	}
 }
 
@@ -143,8 +135,6 @@
 	@media only screen and (min-width: 920px){
 		grid-column: 5 / -1;
 		grid-row: 11 / span 2;
-		
-
 	}
 }
 .movieCard__details--releaseDate {

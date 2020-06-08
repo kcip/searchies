@@ -21,7 +21,6 @@ class TopRated extends Component {
 		try {
 			let apiData = await Axios(topMovieAPI)
 			let data = apiData.data.results
-			console.log('1st api call', data);
 			this.setState({
 				topMovies: data
 			})
@@ -36,7 +35,6 @@ class TopRated extends Component {
 		try {
 			let apiData2 = await Axios(topMovieAPI2)
 			let data2 = apiData2.data.results
-			console.log(data2);
 			this.setState({
 				topMovies2: data2
 			})
@@ -243,9 +241,6 @@ class TopRated extends Component {
 
 		}
 
-
-
-
 		return (
 			<>
 				<div className="topRated">
@@ -254,19 +249,21 @@ class TopRated extends Component {
 					</div>
 					<div className="topRated__wrapper margin-bottom">
 						<Slider  {...settings}>
-							{this.state.topMovies && this.state.topMovies.map((movie => (
-								<div className="topRated__wrapper--images">
-									<img className="topRated__wrapper--image" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
+							{this.state.topMovies && this.state.topMovies.map(((movie, idx) => (
+
+								<div className="topRated__wrapper--images" key={idx}>
+									<img className="topRated__wrapper--image" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={movie.title} />
 								</div>
+
 							)))}
 						</Slider>
 					</div>
 
 					<div className="topRated__wrapper">
 						<Slider  {...settings2}>
-							{this.state.topMovies2 && this.state.topMovies2.map((movie => (
-								<div className="topRated__wrapper--images">
-									<img className="topRated__wrapper--image" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
+							{this.state.topMovies2 && this.state.topMovies2.map(((movie, idx) => (
+								<div className="topRated__wrapper--images" key={idx}>
+									<img className="topRated__wrapper--image" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={movie.title} />
 								</div>
 							)))}
 						</Slider>

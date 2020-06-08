@@ -14,12 +14,10 @@ class Aside extends Component {
 
 	componentDidMount = () => {
 		let data = quotes
-		console.log(quotes)
 		this.setState({
 			quotes: data
 		})
 	}
-
 
 	render() {
 

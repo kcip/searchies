@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-//import ComingSoon from '../ComingSoon/ComingSoon'
 import './features.scss'
 
 class Features extends Component {
@@ -25,10 +24,8 @@ class Features extends Component {
 		try {
 			const nmAPI = await axios(newMovieAPI);
 			const csAPI = await axios(comingSoonMovieAPI);
-
 			const data1 = nmAPI.data.results
 			const data2 = csAPI.data.results
-
 			this.setState({
 				newMovies: data1,
 				comingSoonMovies: data2
@@ -39,43 +36,29 @@ class Features extends Component {
 		}
 	}
 
-
-
-
 	render() {
 		return (
 			<div className="features">
-
 				<div className="features__wrapper">
 					<p className="features--text text-left">coming soon</p>
-					{this.state.comingSoonMovies && this.state.comingSoonMovies.slice(0, 6).map((movie => (
-
-
-						<div className="features--container">
-
+					{this.state.comingSoonMovies && this.state.comingSoonMovies.slice(0, 6).map(((movie, idx) => (
+						<div className="features--container" key={idx}>
 							<Link to={`/comingSoon`}>
-								<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
+								<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={movie.title} />
 							</Link>
-
 						</div>
-
-
-
 					)))}
 				</div>
 				<div className="features__wrapper">
 					<p className="features--text text-right">new movies</p>
-					{this.state.newMovies && this.state.newMovies.slice(0, 6).map((movie => (
-						<div className="features--container">
+					{this.state.newMovies && this.state.newMovies.slice(0, 6).map(((movie, idx) => (
+						<div className="features--container" key={idx}>
 							<Link to={`/newRelease`}>
-								<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} />
+								<img className="features--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={movie.title} />
 							</Link>
-
-
 						</div>
 					)))}
 				</div>
-
 			</div>
 		)
 	}

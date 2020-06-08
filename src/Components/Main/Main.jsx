@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import { Route } from "react-router-dom";
 import axios from 'axios';
 import Form from '../Form/Form'
 import ReturnedSearch from '../ReturnedSearch/ReturnedSearch'
@@ -9,7 +8,6 @@ import SiteInfo from '../SiteInfo/SiteInfo'
 import TopRated from '../TopRated/TopRated';
 import Aside from '../Aside/Aside'
 import Features from '../Features/Features'
-//import ComingSoon from '../ComingSoon/ComingSoon'
 class Main extends Component {
 	constructor() {
 		super()
@@ -19,12 +17,10 @@ class Main extends Component {
 			searchFieldValue: '',
 			loading: false,
 			message: '',
-
-
 		}
 		this.cancel = '';
 	}
-
+	//prevent multiple api calls (https://github.com/axios/axios)
 	//fetch data from api
 	fetchApiResults = (searchFieldValue) => {
 		const extra = `&append_to_response=credits,videos`;
@@ -62,13 +58,10 @@ class Main extends Component {
 		})
 	}
 
-
-
 	render() {
 		const { searchFieldValue } = this.state
 		return (
 			<>
-
 				<main className="main">
 					<div className="hero">
 						<Form
@@ -84,9 +77,6 @@ class Main extends Component {
 						<ReturnedSearch searchDetails={this.state.movies} /> : false
 					}
 				</main>
-
-
-
 			</>
 		)
 	}

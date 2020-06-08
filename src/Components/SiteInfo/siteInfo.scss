@@ -9,7 +9,6 @@
 	margin: 100px 0;
 
 	@media only screen and (max-width: 899px){
-		//background: pink;
 		flex-direction: column;
 		margin: 50px 0;
 		height: auto;
@@ -36,16 +35,13 @@
 		 @media only screen and (max-width: 899px){
 			height: 8vh;
 			align-items: center;
-			flex-direction: column;
-
-			
+			flex-direction: column;	
 		 }
 	 }
 
 	 &.siteInfo--text {
-		color: #C2C2C1;
+			color: #C2C2C1;
 		}
-
 	 }
 
 	.subText {
@@ -78,10 +74,7 @@
 	}
 }
 .callout--text {
-	margin: 0 5px;
-	
-		margin: 0 5px;
-	
+	margin: 0 5px;	
 }
 .mainText {
 	font-size: 4rem;

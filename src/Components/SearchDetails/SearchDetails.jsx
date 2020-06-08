@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-//import axios from 'axios';
-//import '.searchDetails.scss'
 class SearchDetails extends Component {
 
 	render() {
 		let movies = this.props.movieDetails;
-		//console.log(movies)
 		return (
 			<div className="searchDetails__outerWrapper">
 				<Link to={`/movies/${movies.id}`}>

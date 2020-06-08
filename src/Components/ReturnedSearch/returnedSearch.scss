@@ -1,11 +1,9 @@
 .returnedSearchResults {
 	background: #121718;
-	// opacity: .8;
 	position: absolute;
 	top: 200px;
 	right: 0;
 	left: 0;
-
 	& h2 {
 		font-size: 1.8rem;
 		color:  #f9f9f9;
@@ -13,7 +11,6 @@
 		z-index: 5;
 		padding: 10px 0 0 5px;
 	}
-
 }
 
 .closeBtnIcon {
@@ -25,21 +22,16 @@
 }
 
 .searchDetails {
-	//border-radius: 4px;
-	//display: flex;
   display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(150px, auto));
 	grid-auto-rows: minmax(150px, auto);
 	grid-auto-flow: dense;
-	// width: 80%;
 	width: 100%;
 	margin: 0px auto;
-	// margin: 100px auto;
 	padding: 1rem;
 	grid-gap: 5px;
 	position: relative;
 	background: #121718;
-	// border: 1px solid black;
 
 	 &--wrapper {
 		 margin: 5px;
@@ -91,7 +83,4 @@
 	&:hover {
 		transform: scale(.9)
 	}
-	
-	
-
 }

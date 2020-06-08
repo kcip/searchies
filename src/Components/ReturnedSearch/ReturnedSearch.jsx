@@ -17,8 +17,7 @@ function ReturnedSearch(props) {
 					<div className="searchDetails--wrapper">
 						<Link to={`/movies/${movie.id}`}>
 							<div className="searchDetails__container" key={movie.title}>
-								<img className="searchDetails--img" src={movie.poster_path && movie.poster_path != 'null' ? `https://image.tmdb.org/t/p/w200/${movie.poster_path}` : image} />
-								{/* <img className="searchDetails--img" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} /> */}
+								<img className="searchDetails--img" src={movie.poster_path && movie.poster_path !== 'null' ? `https://image.tmdb.org/t/p/w200/${movie.poster_path}` : image} alt={movie.title} />
 								<div className="searchDetails">
 									<p className="searchDetails--movieTitle">{movie.title}</p>
 									<p className="searchDetails--releaseDate">{movie.release_date}</p>

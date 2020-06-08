@@ -8,7 +8,6 @@ class SearchResults extends Component {
 	render() {
 		return (
 			<div className="searchResults">
-
 				search results
 				{props.movies.results && props.movies.results.map((movie =>
 					(
@@ -24,7 +23,6 @@ class SearchResults extends Component {
 								</div>
 							</Link>
 						</div>
-
 					)))}
 			</div>
 		)

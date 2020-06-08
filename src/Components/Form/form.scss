@@ -4,7 +4,6 @@
 	position: sticky;
 	margin: 0 auto;
 	top: 100px;
-	// border: 1px solid black;
 	align-items: center;
 	justify-content: center;
 	height: 70px;
@@ -14,7 +13,6 @@
 	background: #f9f9f9;
 	border-radius: 4px;
 	box-shadow: 8px 8px 10px rgba(0,0,0,0.4)
-
 }
 
 .search-form {
@@ -43,4 +41,7 @@
 			
 		}
 	 }
+}
+.fontAwesomeIcon.search{
+	margin-right: 5px;
 }

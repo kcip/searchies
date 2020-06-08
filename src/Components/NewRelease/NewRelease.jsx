@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import '../ComingSoon/comingSoon.scss'
 import image from '../../Resources/missingImage.png'
-import heroImage from '../../Resources/hero2.jpg'
+import heroImage from '../../Resources/hero4.jpeg'
 
 class NewRelease extends Component {
 	constructor() {
@@ -39,13 +39,11 @@ class NewRelease extends Component {
 					<h2>Now Playing</h2>
 					<p>in a theatre near you...</p>
 				</div>
-
-
 				<div className="movieList--wrapper">
 					{this.state.newMovies && this.state.newMovies.map((movie => (
 						<div className="movieList">
 							<div className="image__container">
-								<img className="image__container--image" src={movie.poster__path != 'null' ? `https://image.tmdb.org/t/p/w200/${movie.poster_path}` : image} />
+								<img className="image__container--image" src={movie.poster__path !== 'null' ? `https://image.tmdb.org/t/p/w200/${movie.poster_path}` : image} alt={movie.title} />
 							</div>
 							<div className="movieList__paragraph">
 								<div className="readMore" onClick={this.showMore}>read more</div>
@@ -59,17 +57,9 @@ class NewRelease extends Component {
 											<p>{movie.release_date}</p>
 										</div>
 									</div>
-
 								)}
-
 							</div>
-
-
 						</div>
-
-
-
-
 					)))}
 				</div>
 			</div>

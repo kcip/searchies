@@ -3,12 +3,12 @@ import './form.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 const Form = (props) => {
-	//form for searching 
+
 	return (
-		// <div class="outerWrapper">
+
 		<div className="searchContainer">
 			<form className='search-form'>
-				<span className="fontAwesomeIcon">
+				<span className="fontAwesomeIcon search">
 					<FontAwesomeIcon icon={faSearch} color="#1E2429" />
 				</span>
 				<input
@@ -20,11 +20,9 @@ const Form = (props) => {
 					id='search-input'
 					autoComplete="off"
 				/>
-
 			</form>
-
 		</div>
-		// </div>
+
 	)
 }
 export default Form
