@@ -47,7 +47,7 @@
 - _Return API Data from Search Field Input Value._
 - _Update DOM with Search Results._
 - _Update DOM to Show More Detailed Information About Selected Item._
-- Get better at React State/PreState and Props._
+- _Get better at React State/PreState and Props._
 - _Organize Files & Code Based on Components._
 
 <br>
@@ -58,7 +58,7 @@
 | :--------------: | :----------------------------------------- |
 |   React Router   | _Will control main site navigation._ |
 | AXIOS | _Will access API data ._ |
-|   Jest Testing   | _Will provide site testing._ |
+|   React Slick   | _Will provide site with slideshow function._ |
 
 <br>
 
@@ -181,23 +181,21 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Search & API    |    H     |     5 hrs      |     tbd. hrs     |    tbd. hrs    |
-| Search Results Component |    H     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
-| Search Details Component |    H     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
-| JSX |    M     |     5 hrs      |    tbd. hrs     |    tbd. hrs     |
-| CSS |    H     |     6 hrs      |    tbd. hrs     |    tbd. hrs     |
-| Responsive |    H     |     4 hrs      |    tbd. hrs     |    tbd. hrs     |
-| TOTAL               |          |     35 hrs      |     tbd. hrs     |     tbd. hrs     |
+| Search & API    |    H     |     5 hrs      |     5 hrs     |    5 hrs    |
+| Search Results Component |    H     |     5 hrs      |    5 hrs     |    5 hrs     |
+| Search Details Component |    H     |     5 hrs      |    5 hrs     |    5 hrs     |
+| JSX |    M     |     5 hrs      |    7 hrs     |    7 hrs     |
+| CSS |    H     |     6 hrs      |    8 hrs     |    8 hrs     |
+| Responsive |    H     |     4 hrs      |    5 hrs     |    5 hrs     |
+| TOTAL               |          |     35 hrs      |     35 hrs     |     35 hrs     |
 
 <br>
 
 #### Helper Functions
 
-> Use this section to document all helper functions, i.e. generic functions that can be reused in other applications.
-
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| TBD | _Coming soon._ |
+|  | _Coming soon._ |
 
 <br>
 
@@ -215,13 +213,19 @@ src
 ## Project Delivery
 
 ### Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
+SASS & CSS Grid 
 ```
-code snippet here
+.features__wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 50px repeat(3, 1fr);
+	grid-auto-flow: dense;
+	grid-auto-rows: 200px;
+	@media only screen and (max-width: 799px){
+		grid-template-rows: 50px repeat(2, 1fr);
+	}
+}
 ```
 
 ### Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+As the site came together, I realized I was going to have issues, so midway through the project, I reworked my component structure. Initially, the search and search results components were in the same file. By changing the component structure, I was able to fix the earlier problems I had with passing state and props.
