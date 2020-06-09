@@ -24,7 +24,7 @@
 ### Overview
 
 **Searchies** <br>
-_[https://epic-goldberg-ef1551.netlify.app/]_
+_[https://epic-goldberg-ef1551.netlify.app/_
 
 **Project Description** <br>
 "Searchies" is a movie search site which will return movie, actor/actress, film movie details.
